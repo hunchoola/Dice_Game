@@ -12,7 +12,7 @@ function PlayGame() {
   let betAmount = parseInt(document.getElementById("betAmountInput").value) || 1;
 
   if (wallet1 < betAmount || wallet2 < betAmount) {
-    alert("One of the players does not have enough money to bet this amount.");
+    // alert("One of the players does not have enough money to bet this amount.");
     return;
   }
 
@@ -42,14 +42,13 @@ function PlayGame() {
   document.getElementById("wallet2").innerText = wallet2;
 
    // Alert if any player is low on balance after the game
-   if (wallet1 <= 0) {
+   if (wallet1 <= 50) {
     alert("Player 1: Your balance is too low, please deposit more money.");
   }
-  if (wallet2 <= 0) {
+  if (wallet2 <= 50) {
     alert("Player 2: Your balance is too low, please deposit more money.");
   }
 }
-
 
 
 // Attach PlayGame function to the "Play" button
