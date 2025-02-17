@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Game</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet" />
   </head>
+  
   <body>
     <div class="container">
       <h1>Refresh Me</h1>
+      
 
       <div class="wallet-inputs">
         <label for="wallet1Input">Player 1 Wallet: ₦</label>
@@ -22,11 +22,14 @@
         <br>
         <button onclick="setWallets()">Set Wallets</button>
       </div>
+      <br>
       
       <div class="wallets">
-        <p>Player 1 Wallet: ₦<span id="wallet1">100</span></p>
-        <p>Player 2 Wallet: ₦<span id="wallet2">100</span></p>
+        <p><span id="wallet1Label">Player 1 Wallet: ₦</span><span id="wallet1">100</span></p>
+        <p><span id="wallet2Label">Player 2 Wallet: ₦</span><span id="wallet2">100</span></p>
       </div>
+
+      
       
       <div class="bet-input">
         <label for="betAmountInput">Bet Amount: ₦</label>
@@ -43,7 +46,10 @@
         <img class="img2" src="./images/dice6.png" />
       </div>
       <br>
-      <button class="play"><a class="reload" href="javascript: location.reload();">Play</a></button>
+        
+        <a class="reload" href="javascript: location.reload();"><button class="play">Play</button></a>
+      
+     
     </div>
 
 
