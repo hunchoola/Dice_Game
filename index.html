@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="wallet-inputs">
+        <label for="wallet1Input">Player 1 Wallet: ₦</label>
+        <input type="number" id="wallet1Input" value="500" min="100" />
+        <br>
+        <label for="wallet2Input">Player 2 Wallet: ₦</label>
+        <input type="number" id="wallet2Input" value="500" min="100" />
+        <br>
+        <button onclick="setWallets()">Set Wallets</button>
+      </div>
+      
+      <div class="wallets">
+        <p>Player 1 Wallet: ₦<span id="wallet1">100</span></p>
+        <p>Player 2 Wallet: ₦<span id="wallet2">100</span></p>
+      </div>
+      
+      <div class="bet-input">
+        <label for="betAmountInput">Bet Amount: ₦</label>
+        <input type="number" id="betAmountInput" value="100" min="100" />
+      </div>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="./images/dice6.png" />
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="./images/dice6.png" />
+      </div>
+      <br>
+      <button class="play"><a class="reload" href="javascript: location.reload();">Play</a></button>
+    </div>
+
+
+    <br><br>
+
+    <footer>Ola Dev</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
